@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jquery</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/myCss.css"> 
+		<script
+		  src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+		</script>
+	</head>
+	<body onload="JQueryTest()">
+		<header>
+			<div class="wrapper">
+				<ul class="nav-area"  id="myTopnav">
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Contact</a></li>
+					<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">
+					<i class="fa fa-bars"></i></a></li>
+				</ul>
+			</div>
+		</header>
+		<main> 
+		</main>
+		<footer>
+		</footer>
+	</body >
+
+
+	<script>
+		
+		function JQueryTest()
+		{
+			if(jQuery)
+			{
+				alert("JQuery is connected");
+			}
+			else
+			{
+				alert("JQuery is not connected");
+			}
+		}
+		function myFunction()
+		{
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "nav-area") {
+			x.className += " responsive";
+		  } else {
+			x.className = "nav-area";
+		  }
+		}
+	</script>
+		
+		
+
+	<script src="js/myjs.js"></script>
+</html>
